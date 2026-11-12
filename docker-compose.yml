@@ -1,0 +1,23 @@
+# Starts PostgreSQL for the project.
+#   docker compose up -d      (start)
+#   docker compose down       (stop, data is kept)
+#   docker compose down -v    (stop and DELETE all data)
+services:
+  postgres:
+    image: postgres:16
+    container_name: novapay-postgres
+    environment:
+      POSTGRES_USER: novapay
+      POSTGRES_PASSWORD: novapay
+      POSTGRES_DB: novapay
+    ports:
+      - "5432:5432"
+    volumes:
+      - novapay_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U novapay"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  novapay_pgdata:

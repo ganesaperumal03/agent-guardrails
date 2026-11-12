@@ -1,0 +1,35 @@
+{
+  "ACC-9988": {
+    "score": 0.92
+  },
+  "ACC-7711": {
+    "score": 0.85
+  },
+  "ACC-WED01": {
+    "score": 0.05
+  },
+  "ACC-4410": {
+    "score": 0.4
+  },
+  "ACC-GROC01": {
+    "score": 0.02
+  },
+  "ACC-RENT01": {
+    "score": 0.01
+  },
+  "ACC-ELEC01": {
+    "score": 0.01
+  },
+  "ACC-SCH01": {
+    "score": 0.01
+  },
+  "ACC-FOOD01": {
+    "score": 0.03
+  },
+  "ACC-C205": {
+    "score": 0.02
+  },
+  "ACC-5520": {
+    "score": 0.3
+  }
+}
